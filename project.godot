@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Creative Coding Lab Test"
+run/main_scene="uid://da7axxpr252sd"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

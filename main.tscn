@@ -1,6 +1,24 @@
 [gd_scene format=3 uid="uid://da7axxpr252sd"]
 
 [ext_resource type="Script" uid="uid://5w2rpb2ponx1" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="FontFile" uid="uid://cbhf0b3njangm" path="res://Arial Bold.ttf" id="2_0xm2m"]
 
 [node name="Main" type="Node2D" unique_id=566575680]
 script = ExtResource("1_ig7tw")
+
+[node name="Button" type="Button" parent="." unique_id=437690937]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Label" type="Label" parent="." unique_id=1619825398]
+offset_left = 300.0
+offset_top = 70.0
+offset_right = 365.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("2_0xm2m")
+theme_override_font_sizes/font_size = 38
+text = "Click Me"
+
+[node name="Label2" type="Label" parent="." unique_id=669809595]
+offset_right = 40.0
+offset_bottom = 23.0
