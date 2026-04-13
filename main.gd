@@ -1,13 +1,19 @@
 extends Node2D
 
-func draw_face():
-	var num_faces= randi_range(20,150)
+func draw_face(): # Draws a happy face
+	var face_size = randi_range(20,150)
 	draw_circle(Vector2(700, 200), 10, Color.RED, false, 200,)
 	draw_circle(Vector2(650, 175), 10, Color.BLUE, true, 10,)
 	draw_circle(Vector2(750, 175), 10, Color.BLUE, true, 10,)
+	draw_line(Vector2(640, 275), Vector2(760, 275), Color.YELLOW, 10)
+	draw_line(Vector2(640, 275), Vector2(610, 230), Color.YELLOW, 10)
+	draw_line(Vector2(760, 275), Vector2(780, 230), Color.YELLOW, 10)
 	
 		
 	
+
+func _on_button_pressed() -> void:
+	var num_faces = randi_range(1,10) # When button is pressed, pick a random number between 1 and 10
 
 func _draw():
 	draw_face()
@@ -26,8 +32,7 @@ func _draw_face():
 	for i in range(num_faces):
 		draw_circle(Vector2(face_size,face_size), 5, Color.BLUE)
 
-func _on_button_pressed() -> void:
-	_draw_face()
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
