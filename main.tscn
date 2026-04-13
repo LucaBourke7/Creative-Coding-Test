@@ -20,5 +20,12 @@ theme_override_font_sizes/font_size = 38
 text = "Click Me"
 
 [node name="Label2" type="Label" parent="." unique_id=669809595]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 135.0
+offset_bottom = 109.0
+theme_override_fonts/font = ExtResource("2_0xm2m")
+theme_override_font_sizes/font_size = 27
+text = "Happy: 0
+
+Sad: 0"
