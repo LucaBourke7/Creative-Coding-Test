@@ -7,8 +7,10 @@
 script = ExtResource("1_ig7tw")
 
 [node name="Button" type="Button" parent="." unique_id=437690937]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 300.0
+offset_top = 65.0
+offset_right = 460.0
+offset_bottom = 125.0
 
 [node name="Label" type="Label" parent="." unique_id=1619825398]
 offset_left = 300.0
